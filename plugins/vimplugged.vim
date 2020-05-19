@@ -3,14 +3,14 @@ call plug#begin('~/.config/nvim/plugged')
 
 "specify plugins
 Plug 'tmsvg/pear-tree'                                  " Bracket autocompletion
-Plug 'itchyny/lightline.vim'                            " Sexy vim statusline
-Plug 'preservim/nerdtree'                               " Directory traversal in vim
+Plug 'itchyny/lightline.vim'                            " Sexy nvim statusline
+Plug 'preservim/nerdtree'                               " Directory traversal in nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}         " Autocompletion engine
 Plug 'joshdick/onedark.vim'                             " Vim Colorscheme
-Plug 'sheerun/vim-polyglot'                             " Syntax highlighting for vim
+Plug 'sheerun/vim-polyglot'                             " Syntax highlighting for nvim
 Plug 'luochen1990/rainbow'                              " Bracket Colorizer
-Plug 'preservim/nerdcommenter'                          " Multiline comments in Vim
-Plug 'ryanoasis/vim-devicons'                           " Icon theme for vim
+Plug 'preservim/nerdcommenter'                          " Multiline comments in nvim
+Plug 'ryanoasis/vim-devicons'                           " Icon theme for nvim
 
 "plug end
 call plug#end()
