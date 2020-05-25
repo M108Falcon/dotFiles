@@ -26,3 +26,10 @@ nnoremap <leader>t  :sp term://bash<CR>
 
 " Use <Esc> to exit exit terminal
 :tnoremap <Esc> <C-\><C-n>
+
+" Keymaps for tabs
+nnoremap tn = :tabnew<space>
+nnoremap tj = :tabnext<CR>
+nnoremap tk = :tabprev<CR>
+nnoremap tf = :tabfirst
+nnoremap tl = :tablast
