@@ -1,5 +1,5 @@
 " Open Nerd-tree with keybind
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 
 " Open Nerd-Tree when no file/directory is specified in vim
 autocmd StdinReadPre * let s:std_in=1
