@@ -18,6 +18,7 @@ set noshowmode                          " Remove mode name from bottom
 "set mouse=a                            " Enable Mouse 
 "set cmdheight=2                        " Increase space for displaying messages
 set splitbelow                          " New horizontal split always goes to bottom
+set conceallevel=0                      " To see `` in markdown files
 set splitright                          " New vertical split always goes to right
 set t_Co=256                            " Set color support to 256 colors
 set nobackup                            " coc setting to toggle lang server backup
