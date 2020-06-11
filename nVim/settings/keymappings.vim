@@ -22,14 +22,15 @@ nnoremap o o<Esc>
 nnoremap O O<Esc>
 
 " Open bash in horizontal split
-nnoremap <leader>t  :sp term://bash<CR>
+nnoremap <leader>t  :10sp term://bash<CR>
 
 " Use <Esc> to exit exit terminal
 :tnoremap <Esc> <C-\><C-n>
+:tnoremap jk <C-\><C-n>
 
 " Keymaps for tabs
 nnoremap tn = :tabnew<space>
 nnoremap tj = :tabnext<CR>
 nnoremap tk = :tabprev<CR>
-nnoremap tf = :tabfirst
-nnoremap tl = :tablast
+nnoremap tf = :tabfirst<CR>
+nnoremap tl = :tablast<CR>
