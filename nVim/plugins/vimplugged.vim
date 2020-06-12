@@ -11,6 +11,7 @@ Plug 'sheerun/vim-polyglot'                             " Syntax highlighting fo
 Plug 'luochen1990/rainbow'                              " Bracket Colorizer
 Plug 'preservim/nerdcommenter'                          " Multiline comments in nvim
 Plug 'ryanoasis/vim-devicons'                           " Icon theme for nvim
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }   " Markdown previewer for nvim
 
 "plug end
 call plug#end()
