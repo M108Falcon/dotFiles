@@ -31,7 +31,7 @@ font:
 
   # Italic font face
   italic:
-    family: Hack Nerd Font Mono
+    family: Hack Nerd Font
     style: Italic
     
   # Point size
