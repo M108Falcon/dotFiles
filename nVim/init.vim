@@ -2,8 +2,9 @@
 
 " I've sourced all the files from different directories to keep the init.vim clean.
 " I don't know if $HOME variable exists in Windows Powershell or Command Prompt
-" Please delete all the sourcing and copy and paste the configs and replace UNIX ones with Windows options that have been provided in each file in settings and plugins directories into
-" init.vim file if you're using Windows.
+" Please delete all the sourcing and copy and paste the configs 
+" and replace UNIX ones with Windows options that have been provided in each file 
+" in settings and plugins directories into init.vim file if you're using Windows.
 " If using UNIX like Operating Systems, you can keep it as is.
 
 source $HOME/.config/nvim/settings/settings.vim
