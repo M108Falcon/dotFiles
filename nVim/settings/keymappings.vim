@@ -1,3 +1,5 @@
+" Keymaps for neovim
+
 "Set Leader key to space
 let g:mapleader = "\<Space>"
 
@@ -23,6 +25,12 @@ nnoremap O O<Esc>
 
 " Open bash in horizontal split
 nnoremap <leader>t  :10sp term://bash<CR>
+
+" Open Powershell(On Windows) in horizontal split
+" nnoremap <leader>t :10sp term://powershell<CR>
+
+" Open Command Prompt(On Windows) in horizontal split
+" nnoremap <leader>t :10sp term://cmd<CR>
 
 " Use <Esc> to exit exit terminal
 :tnoremap <Esc> <C-\><C-n>

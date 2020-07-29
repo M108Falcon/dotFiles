@@ -1,5 +1,7 @@
 " vim plug is plugin manager and installed plugins go to specified directory:
+
 call plug#begin('~/.config/nvim/plugged')
+" Use the address '~\AppData\Local\nvim\plugged' if using Windows in above line
 
 "specify plugins
 Plug 'tmsvg/pear-tree'                                  " Bracket autocompletion

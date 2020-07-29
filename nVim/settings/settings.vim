@@ -15,7 +15,7 @@ set si                                  " Toggle Smart indent
 set wrap                                " Toggle Line Wrap
 set wildmenu                            " Toggle command autocompletion
 set noshowmode                          " Remove mode name from bottom
-"set mouse=a                            " Enable Mouse 
+set mouse=a                            " Enable Mouse 
 "set cmdheight=2                        " Increase space for displaying messages
 set splitbelow                          " New horizontal split always goes to bottom
 set conceallevel=0                      " To see `` in markdown files

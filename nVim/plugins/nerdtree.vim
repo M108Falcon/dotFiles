@@ -5,5 +5,8 @@ map <leader>n :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" Use this line if using windows to show Drive C: with your User directory as default
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree ~\ | endif
+
 " Exit vim even if last window is Nerd-Tree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
