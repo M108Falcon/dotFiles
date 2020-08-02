@@ -1,3 +1,9 @@
+" Init.vim file for Windows
+"
+" I couldn't use source method in Winodows
+" So, here is the init.vim file with 
+" All the Windows specific tweaks.
+
 " Settings for NeoVim
 set encoding=UTF-8                      " Set universal encoding
 filetype plugin on                      " Sets plugin functionalities acc to file types
@@ -55,7 +61,7 @@ nnoremap <C-l> <C-w>l
 nnoremap o o<Esc>
 nnoremap O O<Esc>
 
-" Open bash in horizontal split
+" Open powershell in horizontal split
 nnoremap <leader>t  :10sp term://powershell<CR>
 
 " Use <Esc> to exit exit terminal
@@ -77,13 +83,13 @@ call plug#begin('~\AppData\Local\nvim\plugged')
 Plug 'tmsvg/pear-tree'                                  " Bracket autocompletion
 Plug 'itchyny/lightline.vim'                            " Sexy nvim statusline
 Plug 'preservim/nerdtree'                               " Directory traversal in nvim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}          " Autocompletion engine
+Plug 'neoclide/coc.nvim', {'branch': 'release'}         " Autocompletion engine
 Plug 'joshdick/onedark.vim'                             " Vim Colorscheme
 Plug 'sheerun/vim-polyglot'                             " Syntax highlighting for nvim
 Plug 'luochen1990/rainbow'                              " Bracket Colorizer
 Plug 'preservim/nerdcommenter'                          " Multiline comments in nvim
 Plug 'ryanoasis/vim-devicons'                           " Icon Glyphs for nvim
-Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}  " Markdown preview for nvim
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }   " Markdown previewer for nvim
 
 "plug end
 call plug#end()
@@ -91,7 +97,7 @@ call plug#end()
 "Enable rainbow globally
 let g:rainbow_active=1
 
-" Lightline Setup
+" Lightline Setup to enable automatic filetype based glyphs in statusline
 let g:lightline = {
     \ 'component_function': {
     \   'filetype': 'MyFiletype',
@@ -120,7 +126,7 @@ map <leader>n :NERDTreeToggle<CR>
 
 " Open Nerd-Tree when no file/directory is specified in vim
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree c:\Users\mridu | endif
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree c:\Users\username | endif
 
 " Exit vim even if last window is Nerd-Tree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
