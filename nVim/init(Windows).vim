@@ -90,6 +90,7 @@ Plug 'luochen1990/rainbow'                              " Bracket Colorizer
 Plug 'preservim/nerdcommenter'                          " Multiline comments in nvim
 Plug 'ryanoasis/vim-devicons'                           " Icon Glyphs for nvim
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }   " Markdown previewer for nvim
+Plug 'norcalli/nvim-colorizer.lua'			 " Colorizer engine, works realtime
 
 "plug end
 call plug#end()
@@ -155,3 +156,35 @@ if (has("termguicolors"))
     set termguicolors
     hi LineNr ctermbg=NONE guibg=NONE
 endif
+
+" Configuration for Vim Colorizer
+require'colorizer'.setup(
+  {'*';},
+  {
+    RGB      = true;         -- #RGB hex codes
+	  RRGGBB   = true;         -- #RRGGBB hex codes
+	  names    = true;         -- "Name" codes like Blue
+	  RRGGBBAA = true;         -- #RRGGBBAA hex codes
+	  rgb_fn   = true;         -- CSS rgb() and rgba() functions
+	  hsl_fn   = true;         -- CSS hsl() and hsla() functions
+	  css      = true;         -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+	  css_fn   = true;         -- Enable all CSS *functions*: rgb_fn, hsl_fn
+  })
+  
+  " Conifguration for Markdown preview.vim
+
+" set to 1, nvim will open the preview window after entering the markdown buffer
+" default: 0
+let g:mkdp_auto_start = 1
+
+" set to 1, the nvim will auto close current preview window when change
+" from markdown buffer to another buffer
+" default: 1
+let g:mkdp_auto_close = 1
+
+" specify browser to open preview page I have set my browser to chromium
+" default: ''
+let g:mkdp_browser = 'firefox'
+" Change the name of your preferred Browser instead of Firefox to open
+" Markdown Preview in it.
+" Use Chromium if using Linux/UNIX and Chrome if using Windows/MacOS

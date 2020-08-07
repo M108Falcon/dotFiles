@@ -14,6 +14,7 @@ Plug 'luochen1990/rainbow'                              " Bracket Colorizer
 Plug 'preservim/nerdcommenter'                          " Multiline comments in nvim
 Plug 'ryanoasis/vim-devicons'                           " Icon theme for nvim
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }   " Markdown previewer for nvim
+Plug 'norcalli/nvim-colorizer.lua'			 " Colorizer Engine, works realtime
 
 "plug end
 call plug#end()
