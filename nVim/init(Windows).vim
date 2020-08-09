@@ -1,6 +1,6 @@
 " Init.vim file for Windows
 "
-" I couldn't use source method in Winodows
+" I couldn't use source method in Windows
 " So, here is the init.vim file with 
 " All the Windows specific tweaks.
 
