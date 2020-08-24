@@ -16,6 +16,11 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# set vi mode in bash
+set -o vi
+# set ? as mode key in vi mode as opposed to <esc>
+bind "?":vi-movement-mode
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -90,9 +95,6 @@ alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
-alias ligature='cat ~/Documents/Misc/ligatures.txt'
-alias getServer='python3 -m http.server 8080 --bind '192.168.1.25''
-
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
@@ -115,3 +117,10 @@ rm -f .bash_history
 
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
+
+#CUDA n CUDNN
+export LD_LIBRARY_PATH=/usr/lib/cuda/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/lib/cuda/include:$LD_LIBRARY_PATH
+
+# Export TERM
+export TERM="xterm-256color"
