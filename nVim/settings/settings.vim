@@ -15,10 +15,11 @@ set si                                  " Toggle Smart indent
 set wrap                                " Toggle Line Wrap
 set wildmenu                            " Toggle command autocompletion
 set noshowmode                          " Remove mode name from bottom
-set mouse=a                            " Enable Mouse 
+"set mouse=a                            " Enable Mouse 
 "set cmdheight=2                        " Increase space for displaying messages
 set splitbelow                          " New horizontal split always goes to bottom
 set conceallevel=0                      " To see `` in markdown files
+set hidden                              " For Coc.nvim
 set splitright                          " New vertical split always goes to right
 set t_Co=256                            " Set color support to 256 colors
 set nobackup                            " coc setting to toggle lang server backup
@@ -27,4 +28,4 @@ set updatetime=300                      " Faster time to display autocompletion
 "set clipboard=unnamedplus
 set autochdir                           " Change directory automatically acc to file location
 set background=dark                     " Always set dark background
-au! BufWritePost $MYVIMRC source %      " Atuosource when writing to init.vim(you can also run :source $MYVIMRC)
+au! BufWritePost $MYVIMRC source %      " Autosource when writing to init.vim(you can also run :source $MYVIMRC)
