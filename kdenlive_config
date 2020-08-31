@@ -1,0 +1,18 @@
+Config for Kdenlive to use NVIDIA NVENC_264 for linux
+Extract shotcut video editor anywhere in home folder
+
+Open kdenlive config and environment submenu,
+Paste the following in order.
+
+/home/m108falcon/Downloads/Shotcut/Shotcut.app/ffmpeg
+/home/m108falcon/Downloads/Shotcut/Shotcut.app/ffplay
+/home/m108falcon/Downloads/Shotcut/Shotcut.app/ffplay
+/home/m108falcon/Downloads/Shotcut/Shotcut.app/share/mlt/profiles/
+/home/m108falcon/Downloads/Shotcut/Shotcut.app/melt
+
+Make a new render profile, give it name of your choice
+remove all speed options, Paste the following in Parameters
+
+f=mp4 vcodec=nvenc_h264 acodec=aac g=120 global_quality=21 ab=384k vq=21 r=60 preset=slow bf=2
+
+Pls don't ask me what this all means, I have just bruteforced the stuff to find the best config that works :P
