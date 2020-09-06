@@ -33,6 +33,7 @@ SAVEHIST=1000
 # load cutom path
 export LD_LIBRARY_PATH=/usr/lib/cuda/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/lib/cuda/include:$LD_LIBRARY_PATH
+export EXA_PATH=~/.local/bin:$EXA_PATH
 
 # load aliases
 [ -f "$HOME/.bash_aliases" ] && source "$HOME/.bash_aliases"
