@@ -1,4 +1,5 @@
 # Bash Aliases file
+# Remember to install exa for ls alias to work
 
 # package manager based aliases
 alias aptg="sudo apt update && sudo apt upgrade"
@@ -10,13 +11,27 @@ alias aptf="sudo apt install -f"
 alias aptc="sudo apt clean"
 alias debi="sudo dpkg -i"
 
+# ls based aliases
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias ls='exa --icons'
+alias ll='exa -l --all --icons'
+alias la='exa --all --icons'
+alias l='ls -CF'
+
+# grep based aliases
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 # direcotry movements
 alias ..="cd .."
 alias ...="cd ../.."
 alias .3="cd ../../.."
 alias .4="cd ../../../.."
 
-# adding flags
+# additional flags
+alias rm="rm -i"
 alias cp="cp -i"
 alias df="df -h"
 alias du="du -sh"
