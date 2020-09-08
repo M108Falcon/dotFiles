@@ -4,7 +4,9 @@
 # Extract any archive
 # Usage: ex <file>
 ex() {
-  if [ -f $1 ] ; then case $1 in *.tar.bz2)  tar xjvf $1   ;;
+  if [ -f $1 ] ; then 
+    case $1 in 
+      *.tar.bz2)  tar xjvf $1   ;;
       *.tar.gz)   tar xzvf $1   ;;
       *.bz2)      bunzip2 $1    ;;
       *.rar)      unrar x $1    ;;
