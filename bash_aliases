@@ -70,9 +70,9 @@ alias pull="git pull"
 alias status="git status"
 
 # python based aliases
-alias snek="python3"
-alias getServer="python3 -m http.server 8080 --bind '192.168.1.25'"
+alias snek="python3"  # Just for fun :)
+alias getServer="python3 -m http.server 8080 --bind '192.168.1.25'" # insert ip address of your machine within '' after bind switch
 
 # random stuff
-alias ligature="cat ~/Documents/Misc/ligatures.txt"
+#alias ligature="cat ~/Documents/Misc/ligatures.txt"
 alias parrot="curl parrot.live"
