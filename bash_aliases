@@ -78,3 +78,10 @@ alias getServer="python3 -m http.server 8080 --bind '192.168.1.25'" # insert ip 
 # random stuff
 #alias ligature="cat ~/Documents/Misc/ligatures.txt"
 alias parrot="curl parrot.live"
+
+# nbfc aliases (Make sure to have nbfc installed)
+#alias nbfc_max="mono /opt/nbfc/nbfc.exe set -s 100 && mono /opt/nbfc/nbfc.exe set -f 1 -s 100"
+#alias nbfc_min="mono /opt/nbfc/nbfc.exe set -s 50 && mono /opt/nbfc/nbfc.exe set -f 1 -s 50"
+#alias nbfc_mean="mono /opt/nbfc/nbfc.exe set -s 75 && mono /opt/nbfc/nbfc.exe set -f 1 -s 75"
+#alias nbfc_off="mono /opt/nbfc/nbfc.exe set -a && mono /opt/nbfc/nbfc.exe set -f 1 -a"
+#alias nbfc="mono /opt/nbfc/nbfc.exe"
