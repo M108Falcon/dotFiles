@@ -14,6 +14,7 @@ Plug 'ryanoasis/vim-devicons'                           " Icon theme for nvim
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }   " Markdown previewer for nvim
 Plug 'norcalli/nvim-colorizer.lua'                      " Colorizer Engine written in Lua
 Plug 'dracula/vim', { 'as': 'dracula' }                 " Dracula color theme for Vim
+Plug 'donRaphaco/neotex', { 'for': 'tex' }              " LaTeX previewer
 
 "plug end
 call plug#end()
