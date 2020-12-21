@@ -1,3 +1,4 @@
+" Settings for NeoVim
 set encoding=UTF-8                      " Set universal encoding
 filetype plugin on                      " Sets plugin functionalities acc to file types
 set ruler                               " Always show current cursor position
@@ -13,19 +14,28 @@ set expandtab                           " Converts tabs into spaces
 set ai                                  " Toggle Autoindent
 set si                                  " Toggle Smart indent 
 set wrap                                " Toggle Line Wrap
-set wildmenu                            " Toggle command autocompletion
-set noshowmode                          " Remove mode name from bottom
+set wildmenu                            " Toggle command mode autocompletion
+set noshowmode                          " Remove mode name from bottom (Useful if using statusline)
 "set mouse=a                            " Enable Mouse 
 "set cmdheight=2                        " Increase space for displaying messages
 set splitbelow                          " New horizontal split always goes to bottom
+set splitright                          " New vertical split always goes to right
 set conceallevel=0                      " To see `` in markdown files
 set hidden                              " For Coc.nvim
-set splitright                          " New vertical split always goes to right
 set t_Co=256                            " Set color support to 256 colors
 set nobackup                            " coc setting to toggle lang server backup
 set nowritebackup                       " coc setting
 set updatetime=300                      " Faster time to display autocompletion
-"set clipboard=unnamedplus
+set clipboard+=unnamedplus              " Copied content goes to universal registers
 set autochdir                           " Change directory automatically acc to file location
+set termguicolors                       " Set gui colors
 set background=dark                     " Always set dark background
-au! BufWritePost $MYVIMRC source %      " Autosource when writing to init.vim(you can also run :source $MYVIMRC)
+
+" Autosource when writing to init.vim(you can also run :source $MYVIMRC)
+au! BufWritePost $MYVIMRC source %
+
+" make background transparent
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
+
+" make comments italic
+autocmd BufReadPre * hi Comment cterm=italic gui=italic
