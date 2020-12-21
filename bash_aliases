@@ -1,11 +1,10 @@
 # Bash Aliases file
-# Remember to install exa for ls alias to work
 
 # Extract any archive
 # Usage: ex <file>
 ex() {
-  if [ -f $1 ] ; then 
-    case $1 in 
+  if [ -f $1 ] ; then
+    case $1 in
       *.tar.bz2)  tar xjvf $1   ;;
       *.tar.gz)   tar xzvf $1   ;;
       *.bz2)      bunzip2 $1    ;;
@@ -28,6 +27,7 @@ ex() {
 # package manager based aliases
 alias aptg="sudo apt update && sudo apt upgrade"
 alias aptu="sudo apt update"
+alias aptog="sudo apt --only-upgrade install"
 alias apti="sudo apt install"
 alias aptr="sudo apt purge --autoremove"
 alias aptl="sudo apt list"
@@ -72,16 +72,19 @@ alias pull="git pull"
 alias status="git status"
 
 # python based aliases
-alias snek="python3"  # Just for fun :)
-alias getServer="python3 -m http.server 8080 --bind '192.168.1.25'" # insert ip address of your machine within '' after bind switch
+alias snek="python3"
+alias getServer="python3 -m http.server 8080 --bind '192.168.1.25'"
 
 # random stuff
-#alias ligature="cat ~/Documents/Misc/ligatures.txt"
+alias ligature="cat ~/Documents/Misc/ligatures.txt"
 alias parrot="curl parrot.live"
 
-# nbfc aliases (Make sure to have nbfc installed)
-#alias nbfc_max="mono /opt/nbfc/nbfc.exe set -s 100 && mono /opt/nbfc/nbfc.exe set -f 1 -s 100"
-#alias nbfc_min="mono /opt/nbfc/nbfc.exe set -s 50 && mono /opt/nbfc/nbfc.exe set -f 1 -s 50"
-#alias nbfc_mean="mono /opt/nbfc/nbfc.exe set -s 75 && mono /opt/nbfc/nbfc.exe set -f 1 -s 75"
-#alias nbfc_auto="mono /opt/nbfc/nbfc.exe set -a && mono /opt/nbfc/nbfc.exe set -f 1 -a"
-#alias nbfc="mono /opt/nbfc/nbfc.exe"
+# nbfc aliases
+alias nbfc_max="mono /opt/nbfc/nbfc.exe set -s 100 && mono /opt/nbfc/nbfc.exe set -f 1 -s 100"
+alias nbfc_min="mono /opt/nbfc/nbfc.exe set -s 50 && mono /opt/nbfc/nbfc.exe set -f 1 -s 50"
+alias nbfc_mean="mono /opt/nbfc/nbfc.exe set -s 75 && mono /opt/nbfc/nbfc.exe set -f 1 -s 75"
+alias nbfc_auto="mono /opt/nbfc/nbfc.exe set -a && mono /opt/nbfc/nbfc.exe set -f 1 -a"
+alias nbfc="mono /opt/nbfc/nbfc.exe"
+
+# neofetch custom art
+alias neofetch="neofetch --source ~/Documents/Misc/colorScripts/spaceship_ascii_art.txt"
