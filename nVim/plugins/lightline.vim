@@ -1,4 +1,4 @@
-" Seperator > style and Glyphs for lightline
+" Seperator > style and Filetype Glyphs for lightline (Requires NerdFonts)
 let g:lightline = {
 		\ 'component': {
 		\   'lineinfo': ' %3l:%-2v',
@@ -30,5 +30,5 @@ function! MyFileformat()
   return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
 
-" Colorscheme for lightline : Possible names(instead of defualt) -> onedark, wombat, seoul256, landscape
-let g:lightline.colorscheme = 'default'
+" Colorscheme for lightline : Possible names(instead of default) -> onedark, wombat, seoul256, landscape, monokai_tasty, gruvbox
+let g:lightline.colorscheme = 'monokai_tasty'
