@@ -21,21 +21,21 @@ nnoremap <C-l> <C-w>l
 nnoremap o o<Esc>
 nnoremap O O<Esc>
 
-" Open bash in horizontal split
-nnoremap <leader>t :10sp term://bash<CR>
-nnoremap <leader>vt :vs term://bash<CR>
+" Open zsh in horizontal split (Replace the name of your preffered shell)
+nnoremap <leader>t :10sp term://zsh<CR>
+nnoremap <leader>vt :vs term://zsh<CR>
 
-" Use <Esc> to exit exit terminal
+" Use <Esc> or <jk> to to enter normal mode terminal
 :tnoremap <Esc> <C-\><C-n>
 :tnoremap jk <C-\><C-n>
 
 " Keymaps for tabs
 nnoremap tn :tabnew<space>
-inoremap tn <Esc>:tabnew<space>
 nnoremap tj :tabnext<CR>
 nnoremap tk :tabprev<CR>
 nnoremap tf :tabfirst<CR>
 nnoremap tl :tablast<CR>
+
 " quick tab shortcuts
 nnoremap <leader>1 1gt
 nnoremap <leader>2 2gt
