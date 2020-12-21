@@ -124,3 +124,6 @@ export LD_LIBRARY_PATH=/usr/lib/cuda/include:$LD_LIBRARY_PATH
 
 # Export TERM
 export TERM="xterm-256color"
+
+# Export qt5 variable
+export QT_QPA_PLATFORMTHEME=qt5ct
