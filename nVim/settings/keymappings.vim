@@ -50,3 +50,6 @@ nnoremap <leader>10 10gt
 
 " Toggle Indent Line plugin
 nnoremap <leader>it :IndentLinesToggle<CR>
+
+" Remove highlight after search
+nnoremap <silent> <leader>l :nohlsearch<CR><C-L>
