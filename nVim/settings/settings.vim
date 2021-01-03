@@ -14,6 +14,7 @@ set expandtab                           " Converts tabs into spaces
 set ai                                  " Toggle Autoindent
 set si                                  " Toggle Smart indent 
 set wrap                                " Toggle Line Wrap
+set linebreak                           " Linebreak, together with wrap, will function as word-wrap
 set wildmenu                            " Toggle command mode autocompletion
 set noshowmode                          " Remove mode name from bottom (Useful if using statusline)
 "set mouse=a                            " Enable Mouse 
