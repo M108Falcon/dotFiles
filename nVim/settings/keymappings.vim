@@ -47,3 +47,6 @@ nnoremap <leader>7 7gt
 nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
 nnoremap <leader>10 10gt
+
+" Toggle Indent Line plugin
+nnoremap <leader>it :IndentLinesToggle<CR>
