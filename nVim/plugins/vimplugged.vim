@@ -17,6 +17,7 @@ Plug 'ryanoasis/vim-devicons'                           " Icon theme for nvim
 Plug 'norcalli/nvim-colorizer.lua'                      " Colorizer Engine written in Lua
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }   " Markdown previewer for nvim (Requires yarn)
 Plug 'donRaphaco/neotex', { 'for': 'tex' }              " LaTeX previewer for nvim
+Plug 'Yggdroot/indentLIne'                              " See indentlines in nvim
 
 "plug end
 call plug#end()
