@@ -40,3 +40,9 @@ autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
 " make comments italic
 autocmd BufReadPre * hi Comment cterm=italic gui=italic
+
+" Custom command to import Assignment LaTeX template
+command AssignmentTemplate :r ~/Documents/docs/tex_Samples/assignment_template.tex
+
+" Custom command to import Code Assignment LaTeX template
+command CodeAssignmentTemplate :r ~/Documents/docs/tex_Samples/code_assignment_template.tex
