@@ -17,6 +17,9 @@ zstyle :compinstall filename '/home/m108falcon/.zshrc'
 autoload -Uz compinit
 compinit
 
+# Export TERM
+export TERM="xterm-256color"
+
 # Default editor
 EDITOR=vim
 
