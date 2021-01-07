@@ -31,22 +31,22 @@ nnoremap <leader>vt :vs term://zsh<CR>
 
 " Keymaps for tabs
 nnoremap tn :tabnew<space>
-nnoremap tj :tabnext<CR>
-nnoremap tk :tabprev<CR>
-nnoremap tf :tabfirst<CR>
-nnoremap tl :tablast<CR>
+nnoremap <silent> tj :tabnext<CR>
+nnoremap <silent> tk :tabprev<CR>
+nnoremap <silent> tf :tabfirst<CR>
+nnoremap <silent> tl :tablast<CR>
 
 " quick tab shortcuts
-nnoremap <leader>1 1gt
-nnoremap <leader>2 2gt
-nnoremap <leader>3 3gt
-nnoremap <leader>4 4gt
-nnoremap <leader>5 5gt
-nnoremap <leader>6 6gt
-nnoremap <leader>7 7gt
-nnoremap <leader>8 8gt
-nnoremap <leader>9 9gt
-nnoremap <leader>10 10gt
+nnoremap <silent> <leader>1 1gt
+nnoremap <silent> <leader>2 2gt
+nnoremap <silent> <leader>3 3gt
+nnoremap <silent> <leader>4 4gt
+nnoremap <silent> <leader>5 5gt
+nnoremap <silent> <leader>6 6gt
+nnoremap <silent> <leader>7 7gt
+nnoremap <silent> <leader>8 8gt
+nnoremap <silent> <leader>9 9gt
+nnoremap <silent> <leader>10 10gt
 
 " Toggle Indent Line plugin
 nnoremap <leader>it :IndentLinesToggle<CR>
