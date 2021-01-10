@@ -30,11 +30,14 @@ nnoremap <leader>vt :vs term://zsh<CR>
 :tnoremap jk <C-\><C-n>
 
 " Keymaps for tabs
+nnoremap ngf <C-w>gf
 nnoremap tn :tabnew<space>
 nnoremap <silent> tj :tabnext<CR>
 nnoremap <silent> tk :tabprev<CR>
 nnoremap <silent> tf :tabfirst<CR>
 nnoremap <silent> tl :tablast<CR>
+nnoremap <C-M-h> :-tabmove<CR>
+nnoremap <C-M-l> :+tabmove<CR>
 
 " quick tab shortcuts
 nnoremap <silent> <leader>1 1gt
