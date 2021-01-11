@@ -17,16 +17,18 @@ Plug 'ryanoasis/vim-devicons'                           " Icon theme for nvim
 Plug 'norcalli/nvim-colorizer.lua'                      " Colorizer Engine written in Lua
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }   " Markdown previewer for nvim (Requires yarn)
 Plug 'donRaphaco/neotex', { 'for': 'tex' }              " LaTeX previewer for nvim
-Plug 'Yggdroot/indentLIne'                              " See indentlines in nvim
+Plug 'Yggdroot/indentLIne'                              " See indentlines in nvim(required if using soft-tab)
+                                                        " If using hard tabs, :set list lcs=tab:\|\  (Note: whitespace after last \)
+                                                        " will do the work.
 
 "plug end
 call plug#end()
 
 " place monokai_tasty as default colorscheme
-colorscheme vim-monokai-tasty
+"colorscheme vim-monokai-tasty
 
 " enable italics
-let g:vim_monokai_tasty_italic = 1
+"let g:vim_monokai_tasty_italic = 1
 
 " place gruvbox as default colorscheme
 "colorscheme gruvbox
