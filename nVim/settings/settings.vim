@@ -17,7 +17,7 @@ set wrap                                " Toggle Line Wrap
 set linebreak                           " Linebreak, together with wrap, will function as word-wrap
 set wildmenu                            " Toggle command mode autocompletion
 set noshowmode                          " Remove mode name from bottom (Useful if using statusline)
-"set mouse=a                            " Enable Mouse 
+"set mouse=a                            " Enable Mouse (a indicates all modes)
 "set cmdheight=2                        " Increase space for displaying messages
 set splitbelow                          " New horizontal split always goes to bottom
 set splitright                          " New vertical split always goes to right
@@ -29,7 +29,7 @@ set nowritebackup                       " coc setting
 set updatetime=300                      " Faster time to display autocompletion
 set clipboard+=unnamedplus              " Copied content goes to universal registers
 set autochdir                           " Change directory automatically acc to file location
-set termguicolors                       " Set gui colors
+set termguicolors                       " Set colors for color plugins to work
 set background=dark                     " Always set dark background
 
 " Autosource when writing to init.vim(you can also run :source $MYVIMRC)
