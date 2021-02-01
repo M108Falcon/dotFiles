@@ -38,3 +38,6 @@ call plug#end()
 
 "Enable rainbow globally
 let g:rainbow_active=1
+
+" Optional LaTeX compiler as xelatex
+let g:neotex_pdflatex_alternative='xelatex'
