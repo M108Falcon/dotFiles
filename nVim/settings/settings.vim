@@ -46,3 +46,6 @@ command AssignmentTemplate :r ~/Documents/docs/tex_Samples/assignment_template.t
 
 " Custom command to import Code Assignment LaTeX template
 command CodeAssignmentTemplate :r ~/Documents/docs/tex_Samples/code_assignment_template.tex
+
+" Custom command to import MR Report Template
+command MRTemplateReport :r ~/Documents/docs/tex_Samples/MR_report_template.tex
