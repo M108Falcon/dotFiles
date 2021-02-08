@@ -75,7 +75,7 @@ alias free="free -m"
 # git based aliases
 alias clone="git clone"
 alias add="git add"
-alias commit="git commit -m"
+alias commit="git commit"
 alias checkout="git checkout"
 alias branch="git branch"
 alias push="git push"
