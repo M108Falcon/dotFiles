@@ -13,6 +13,7 @@ Plug 'joshdick/onedark.vim'                             " Atom inspired one-dark
 Plug 'dracula/vim', { 'as': 'dracula' }                 " Dracula colorscheme for vim
 Plug 'patstockwell/vim-monokai-tasty'                   " Sublime inspired monokai colorscheme for vim
 Plug 'morhetz/gruvbox'                                  " Gruvbox colorscheme for vim
+Plug 'sainnhe/sonokai' 				 " Colortheme inspired by Monokai Pro
 Plug 'ryanoasis/vim-devicons'                           " Icon theme for nvim
 Plug 'norcalli/nvim-colorizer.lua'                      " Colorizer Engine written in Lua
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }   " Markdown previewer for nvim (Requires yarn)
