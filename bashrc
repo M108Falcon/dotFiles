@@ -19,7 +19,7 @@ HISTFILESIZE=2000
 # set vi mode in bash
 set -o vi
 # set ? as mode key in vi mode as opposed to <esc>
-bind "?":vi-movement-mode
+#bind "?":vi-movement-mode
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -121,6 +121,10 @@ rm -f .bash_history
 #CUDA n CUDNN
 export LD_LIBRARY_PATH=/usr/lib/cuda/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/lib/cuda/include:$LD_LIBRARY_PATH
+
+# export PATH
+export PATH=~/.local/bin:$PATH
+export PATH=~/.local/nodejs/bin:$PATH
 
 # Export TERM
 export TERM="xterm-256color"
