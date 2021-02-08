@@ -36,7 +36,8 @@ SAVEHIST=1000
 # load cutom path
 export LD_LIBRARY_PATH=/usr/lib/cuda/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/lib/cuda/include:$LD_LIBRARY_PATH
-export EXA_PATH=~/.local/bin:$EXA_PATH
+export PATH=~/.local/bin:$PATH
+export PATH=~/.local/nodejs/bin:$PATH
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # load aliases
