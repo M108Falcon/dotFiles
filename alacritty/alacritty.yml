@@ -14,14 +14,14 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-#env:
+env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  #TERM: alacritty
+  TERM: xterm-256color
 
 window:
   # Window dimensions (changes require restart)
@@ -45,9 +45,9 @@ window:
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  padding:
+    x: 2
+    y: 5
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -111,7 +111,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Fira Code Nerd Font
+    family: Iosevka Nerd Font
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -122,7 +122,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fira Code Nerd Font
+    family: Iosevka Nerd Font
 
     # The `style` can be specified to pick a specific face.
     #style: Bold
@@ -133,24 +133,24 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Iosevka Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Hack Nerd Font
+    #style: Italic
 
   # Bold italic font face
-  #bold_italic:
+  bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Iosevka Nerd Font
 
     # The `style` can be specified to pick a specific face.
     #style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 18.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -176,11 +176,11 @@ font:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
-  #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
+  primary:
+    background: '#000000'
+    foreground: '#dddddd'
 
     # Bright and dim foreground colors
     #
@@ -239,26 +239,26 @@ font:
     #  foreground: '#1d1f21'
 
   # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
+  normal:
+    black:   '#000000'
+    red:     '#cc0403'
+    green:   '#19cb00'
+    yellow:  '#cecb00'
+    blue:    '#0d73cc'
+    magenta: '#cb1ed1'
+    cyan:    '#0dcdcd'
+    white:   '#dddddd'
 
   # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
+  bright:
+    black:   '#767676'
+    red:     '#f2201f'
+    green:   '#23fd00'
+    yellow:  '#fffd00'
+    blue:    '#1a8fff'
+    magenta: '#fd28ff'
+    cyan:    '#14ffff'
+    white:   '#ffffff'
 
   # Dim colors
   #
@@ -415,7 +415,7 @@ cursor:
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
 
-#mouse:
+mouse:
   # Click settings
   #
   # The `double_click` and `triple_click` settings control the time
@@ -427,7 +427,7 @@ cursor:
   # If this is `true`, the cursor is temporarily hidden when typing.
   #hide_when_typing: false
 
-  #url:
+  url:
     # URL launcher
     #
     # This program is executed when clicking on a text which is recognized as a
@@ -439,8 +439,8 @@ cursor:
     #   - (macOS) open
     #   - (Linux/BSD) xdg-open
     #   - (Windows) explorer
-    #launcher:
-    #  program: xdg-open
+    launcher:
+      program: brave-browser
     #  args: []
 
     # URL modifiers
@@ -448,7 +448,7 @@ cursor:
     # These are the modifiers that need to be held down for opening URLs when
     # clicking on them. The available modifiers are documented in the key
     # binding section.
-    #modifiers: None
+    modifiers: Alt
 
 # Mouse bindings
 #
@@ -663,7 +663,7 @@ cursor:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
   #- { key: Paste,                                action: Paste          }
   #- { key: Copy,                                 action: Copy           }
   #- { key: L,         mods: Control,             action: ClearLogNotice }
@@ -723,18 +723,20 @@ cursor:
   #- { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
 
   # (Windows, Linux, and BSD only)
-  #- { key: V,              mods: Control|Shift,           action: Paste            }
-  #- { key: C,              mods: Control|Shift,           action: Copy             }
+  - { key: V,              mods: Control|Shift,           action: Paste            }
+  - { key: C,              mods: Control|Shift,           action: Copy             }
   #- { key: F,              mods: Control|Shift,           action: SearchForward    }
   #- { key: B,              mods: Control|Shift,           action: SearchBackward   }
   #- { key: C,              mods: Control|Shift, mode: Vi, action: ClearSelection   }
   #- { key: Insert,         mods: Shift,                   action: PasteSelection   }
   #- { key: Key0,           mods: Control,                 action: ResetFontSize    }
   #- { key: Equals,         mods: Control,                 action: IncreaseFontSize }
-  #- { key: Plus,           mods: Control,                 action: IncreaseFontSize }
+  - { key: Plus,           mods: Control,                 action: IncreaseFontSize }
   #- { key: NumpadAdd,      mods: Control,                 action: IncreaseFontSize }
-  #- { key: Minus,          mods: Control,                 action: DecreaseFontSize }
+  - { key: Minus,          mods: Control|Shift,           action: DecreaseFontSize }
   #- { key: NumpadSubtract, mods: Control,                 action: DecreaseFontSize }
+  - { key: N,              mods: Control|Shift,           action: SpawnNewInstance }
+  #- { key: L,              mods: Control,                 chars: "clear \x0D" }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
