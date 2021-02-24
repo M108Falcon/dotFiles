@@ -72,6 +72,12 @@ alias df="df -h"
 alias du="du -sh"
 alias free="free -m"
 
+# neovim
+alias v="nvim"
+
+# launch tmux with custom config
+alias tmux="tmux -f ~/.config/tmux/tmux.conf new -s"
+
 # git based aliases
 alias clone="git clone"
 alias add="git add"
@@ -98,4 +104,5 @@ alias nbfc_auto="mono /opt/nbfc/nbfc.exe set -a && mono /opt/nbfc/nbfc.exe set -
 alias nbfc="mono /opt/nbfc/nbfc.exe"
 
 # neofetch custom art
-alias neofetch="neofetch --source ~/Documents/Misc/colorScripts/spaceship_ascii_art.txt"
+#alias neofetch="neofetch --source ~/Documents/Misc/colorScripts/spaceship_ascii_art.txt"
+alias neofetch="neofetch | lolcat"
