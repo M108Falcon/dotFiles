@@ -32,6 +32,12 @@ set autochdir                           " Change directory automatically acc to 
 set termguicolors                       " Set colors for color plugins to work
 set background=dark                     " Always set dark background
 
+" See invisible characters
+set list listchars=tab:>\ ,trail:+,eol:$
+
+" Set fonts for gui clients
+set guifont=Iosevka\ Nerd\ Font:h20
+
 " Autosource when writing to init.vim(you can also run :source $MYVIMRC)
 au! BufWritePost $MYVIMRC source %
 
